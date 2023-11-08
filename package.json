@@ -1,0 +1,34 @@
+{
+  "name": "grunt-ps-sass",
+  "version": "0.0.1",
+  "description": "GruntJS plugin to compile Sass files",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterSelvaraj/grunt-ps-sass.git"
+  },
+  "keywords": [
+    "GruntJS",
+    "Sass"
+  ],
+  "author": "Peter Selvaraj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PeterSelvaraj/grunt-ps-sass/issues"
+  },
+  "homepage": "https://github.com/PeterSelvaraj/grunt-ps-sass#readme",
+  "dependencies": {
+    "grunt": "~1.6.1",
+    "grunt-ps-log": "~1.1.0",
+    "grunt-ps-file": "~1.1.0",
+    "sass": "~1.69.5"
+  },
+  "devDependencies": {
+    "fast-glob": "~3.3.2",
+    "grunt-contrib-clean": "~2.0.1",
+    "grunt-contrib-jshint": "~3.2.0"
+  }
+}
