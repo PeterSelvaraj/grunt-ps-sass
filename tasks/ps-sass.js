@@ -7,11 +7,10 @@
 
 'use strict';
 
-const grunt = require('grunt');
 const log = require('grunt-ps-log');
 const sassSvc = require('./services/sass');
 
-module.exports = function () {
+module.exports = function (grunt) {
   grunt.registerMultiTask('psSass', 'Compile Sass files...', function () {
     log.log(`Starting ${this.target} task...`);
 
