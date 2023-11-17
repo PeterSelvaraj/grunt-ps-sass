@@ -9,8 +9,15 @@ class SassSvc {
   #compileFile(file, done) {
     log.verbose(`Compiling ${file.src}`);
 
+    let out;
     const dir = path.dirname(file.dest);
-    const out = sass.compile(file.src);
+
+    try {
+      out = sass.compile(file.src);
+    } catch(err) {
+      log.error(err);
+      log.fail('Sass compile failed!');
+    }
 
     if (!fs.existsSync(dir)) {
       fs.mkdirSync(dir, { recursive: true });

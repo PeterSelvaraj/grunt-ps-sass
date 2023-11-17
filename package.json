@@ -1,6 +1,6 @@
 {
   "name": "grunt-ps-sass",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "GruntJS plugin to compile Sass files",
   "main": "Gruntfile.js",
   "scripts": {
